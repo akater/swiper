@@ -44,7 +44,6 @@
 
 (require 'cl-lib)
 (require 'ring)
-(require 'mwheel)
 
 (eval-when-compile
   (require 'subr-x))
@@ -2984,6 +2983,9 @@ tries to ensure that it does not change depending on the number of candidates."
 (defcustom ivy-truncate-lines t
   "Minibuffer setting for `truncate-lines'."
   :type 'boolean)
+
+(defvar mwheel-scroll-up-function)
+(defvar mwheel-scroll-down-function)
 
 (defun ivy--minibuffer-setup ()
   "Setup ivy completion in the minibuffer."
