@@ -44,6 +44,7 @@
 
 (require 'cl-lib)
 (require 'ring)
+(require 'mwheel)
 
 (eval-when-compile
   (require 'subr-x))
